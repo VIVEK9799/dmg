@@ -2172,3 +2172,17 @@ section {
 #portfolio img.img-fluid {
     min-height: 200px !important;
 }
+
+@media ( max-width: 767px){
+.c99e {
+    display: flex;
+    flex-direction: column !important;
+    gap: 40px;
+    flex-wrap: nowrap !important;
+    align-content: space-around;
+    justify-content: space-around !important;
+    align-items: center !important;
+}
+.c98e {
+	max-height: 100px;
+}}
