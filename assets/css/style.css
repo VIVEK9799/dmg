@@ -404,16 +404,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .carousel-content {
-  background: rgba(28, 23, 21, 0.7);
+  background: rgba(28, 23, 21, 0.13);
   padding: 20px;
   color: #fff;
   -webkit-animation-duration: .2s;
   animation-duration: .2s;
-  border-top: 5px solid #f03c02;
+  border-top1: 5px solid #e8e8e8;
 }
 
 #hero .carousel-content h2 {
-  color: #fff;
+  color: #f03c02;
   margin-bottom: 30px;
   font-size: 28px;
   font-weight: 700;
