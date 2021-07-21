@@ -404,16 +404,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .carousel-content {
-  background: rgba(28, 23, 21, 0.7);
+  background: rgba(28, 23, 21, 0.13);
   padding: 20px;
   color: #fff;
   -webkit-animation-duration: .2s;
   animation-duration: .2s;
-  border-top: 5px solid #f03c02;
+  border-top1: 5px solid #e8e8e8;
 }
 
 #hero .carousel-content h2 {
-  color: #fff;
+  color: #f03c02;
   margin-bottom: 30px;
   font-size: 28px;
   font-weight: 700;
@@ -456,7 +456,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero .carousel-inner .carousel-item-next.carousel-item-start,
 #hero .carousel-inner .carousel-item-prev.carousel-item-end {
   opacity: 1;
-  transition: 0.2s;
+  transition: 0.5s;
 }
 
 #hero .carousel-inner .carousel-item-next,
@@ -494,7 +494,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 992px) {
   #hero {
-    height: calc(100vh - 70px);
+    height: calc(100vh - 140px);
   }
   #hero .carousel-content h2 {
     margin-bottom: 15px;
@@ -996,7 +996,7 @@ section {
 }
 
 .team .member .social {
-  position: absolute;
+  position: sticky;
   left: 0;
   bottom: 0;
   right: 0;
@@ -2172,6 +2172,10 @@ section {
 #portfolio img.img-fluid {
     min-height: 200px !important;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> d6a208626bdbea213d214d5139170bdaefa72c6f
 @media ( max-width: 767px){
 .c99e {
     display: flex;
@@ -2184,4 +2188,15 @@ section {
 }
 .c98e {
 	max-height: 100px;
+<<<<<<< HEAD
 }}
+=======
+}
+img.c96w {
+    max-height: 52px !important;
+    margin-left: 8px !important;
+}}
+a.cc-unoo {
+    margin-bottom: 55px !important;
+}
+>>>>>>> d6a208626bdbea213d214d5139170bdaefa72c6f
