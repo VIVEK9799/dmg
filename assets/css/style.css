@@ -2172,10 +2172,7 @@ section {
 #portfolio img.img-fluid {
     min-height: 200px !important;
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> d6a208626bdbea213d214d5139170bdaefa72c6f
 @media ( max-width: 767px){
 .c99e {
     display: flex;
@@ -2188,8 +2185,19 @@ section {
 }
 .c98e {
 	max-height: 100px;
-<<<<<<< HEAD
-}}
+
+}
+.row.c99e {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x)/ -2);
+    margin-left: calc(var(--bs-gutter-x)/ -2);
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+}
 =======
 }
 img.c96w {
@@ -2199,4 +2207,3 @@ img.c96w {
 a.cc-unoo {
     margin-bottom: 55px !important;
 }
->>>>>>> d6a208626bdbea213d214d5139170bdaefa72c6f
