@@ -6,10 +6,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Optimal Web : Contact Form With JS</title>
-  <link rel="stylesheet" href="assets/css/quote-style.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+  (function() {
+    emailjs.init("user_pSTtKMfwN0uD3Jtrwubss");
+  })();
+  </script>
+  <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('contact_service', 'contact_form', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
 </head>
 
 <body>
+
+<form id="contact-form">
+        <input type="hidden" name="contact_number">
+        <label>Name</label>
+        <input type="text" name="user_name">
+        <label>Email</label>
+        <input type="email" name="user_email">
+        <label>Message</label>
+        <textarea name="message"></textarea>
+        <input type="submit" value="Send">
+    </form>
+	
+	
   <!-- contact1 -->
   <section class="w3l-simple-contact-form1">
     <div class="contact-form section-gap">
@@ -46,7 +81,9 @@
   
 <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
 <script
-  src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
 <script src="https://smtpjs.com/v3/smtp.js"></script>
  
 <script>  
@@ -64,11 +101,9 @@
 			//console.log(name, phone, email, message);
 
 			Email.send({
-                Host : "smtp.gmail.com",
-				Username : "quote.deshmarble@gmail.com",
-				Password : "rkbera@1998",
-				To: 'taxdaddyindia@gmail.com',
-				From: "quote.deshmarble@gmail.com",
+        SecureToken:"fbf31702-bb7f-4a4e-9c1c-4ccf17ee777f",
+				To: 'optimalweb09@gmail.com',
+				From: "demooptimalweb@gmail.com",
 				Subject: "New message on contact from "+name,
 				Body: Body
 			}).then(
