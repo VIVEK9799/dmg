@@ -46,9 +46,7 @@
   
 <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
 <script
-  src="https://code.jquery.com/jquery-2.2.4.min.js"
-  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-  crossorigin="anonymous"></script>
+  src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 <script src="https://smtpjs.com/v3/smtp.js"></script>
  
 <script>  
@@ -66,7 +64,9 @@
 			//console.log(name, phone, email, message);
 
 			Email.send({
-        SecureToken:"38ed46b8-46d3-4d7c-ad6d-3cea71881d6e",
+                Host : "smtp.gmail.com",
+				Username : "quote.deshmarble@gmail.com",
+				Password : "rkbera@1998",
 				To: 'taxdaddyindia@gmail.com',
 				From: "quote.deshmarble@gmail.com",
 				Subject: "New message on contact from "+name,
