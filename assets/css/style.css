@@ -2233,7 +2233,7 @@ a.back-to-top.d-flex.align-items-center.justify-content-center.active {
 
 @media (max-width: 768px) {
 	.mapgoogle {
-    max-width: 330px;
+    max-width: 336px;
 	}
 	.testimonials {
 	display: none ;	
