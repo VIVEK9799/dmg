@@ -2238,4 +2238,18 @@ a.back-to-top.d-flex.align-items-center.justify-content-center.active {
 	.testimonials {
 	display: none ;	
 	
+}
+a.get-started-btn.scrollto {
+padding: 8px 15px 8px 15px;
+    background: BEIGE;
+    margin-right: 20px;
+    border-radius: 6%;
+    margin-left: 20px;
 }}
+
+a.get-started-btn.scrollto {
+padding: 8px 15px 8px 15px;
+    background: BEIGE;
+    border-radius: 6%;
+    margin-left: 20px;
+}
